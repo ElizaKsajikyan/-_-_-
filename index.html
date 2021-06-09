@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="intl-tel-input-master/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrapper d-flex align-items-center min-vh-100">
+    <div class="container">
+        <div class="row wrapper-container">
+            <section class="col-lg-6 first-block position-relative overflow-hidden d-flex align-items-lg-end flex-column flex-lg-row">
+                <div class="d-flex flex-lg-column justify-content-between link-container">
+                    <a href="" class="text-decoration-none  link">Reduslim</a>
+                    <a href="" class="text-decoration-none  link">ECO</a></div>
+
+                <img src="images/image.png" class="first-block__image position-relative flex-grow-0" alt="">
+            </section>
+            <section class="col-lg-6 second-block p-0 d-flex flex-column">
+                <h1 class="second-block__title text-center mx-auto">Сделай шаг
+                    к выздоровлению</h1>
+                <form action="" class="w-100 bg-white order-form flex-grow-1">
+                    <div class="input-container mx-auto">
+                        <label for="name" class="form-label input-container__label">Ваше <span>имя</span></label>
+                        <input type="text" class="form-control input-container__input shadow-none" id="name"
+                               value="Алексей">
+                    </div>
+                    <div class="input-container mx-auto">
+                        <label for="telephone" class="form-label input-container__label">Ваш
+                            <span>телефон</span></label>
+                        <input type="tel" class="form-control input-container__input shadow-none" placeholder=""
+                               value="+7 (123) 456 78-90" id="telephone">
+                    </div>
+                    <div>
+                        <button class="text-white primary-button border-0 shadow-none btn w-100 mx-auto d-block">
+                            Заказать
+                            <svg width="18" height="12" viewBox="0 0 18 12" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 6H16.5M16.5 6L11.5 1M16.5 6L11.5 11" stroke="white" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+</main>
+
+<!-- Use as a Vanilla JS plugin -->
+<script src="intl-tel-input-master/build/js/intlTelInput.min.js"></script>
+<script>
+    // Vanilla Javascript
+    let input = document.querySelector('#telephone');
+    window.intlTelInput(input, ({
+        // options here
+    }));
+</script>
+</body>
+</html>
